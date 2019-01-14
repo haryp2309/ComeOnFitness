@@ -16,6 +16,11 @@ body {
 	box-shadow: 0px 5px 12px 0px black;
 }
 
+#header.headertransition {
+	height: 30px;
+	transition: height 1s;
+}
+
 #headertitle {
 	width: 14%;
 	height: 100%;
@@ -38,6 +43,7 @@ body {
 	background-image: url('media/wallpaper-1-index.png');
 	background-position:center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	height: 100vh;
 	position: relative;
 	left: 0px;
@@ -46,9 +52,38 @@ body {
 
 #container-2 {
 	width: 100%;
-	background-image: url('media/wallpaper-1-index.png');
+	background-color: black;
 	background-position:center;
 	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#container-2 div {
+	flex: 1;
+	background: white;
+	min-width: 33%;
+	height: 50%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+#container-2 div img {
+	object-fit: cover;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+#container-3 {
+	width: 100%;
+	background-image: url('media/Styrke.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: cover;
 	height: 100vh;
 	position: relative;
 
