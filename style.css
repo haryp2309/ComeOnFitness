@@ -6,16 +6,15 @@ body {
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	scroll-snap-type: y mandatory;	
-	scroll-snap-type: mandatory;
-	scroll-snap-points-y:repeat(1vh);
 	display: flex;
 	flex-direction: column;
 	overflow-y: scroll;
 }
 
-#body {
-
-}
+/*body div {
+	scroll-snap-align: start;
+	display: flex;
+}*/
 
 #header {
 	background-color:rgba(0,0,0,0.9);
