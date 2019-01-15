@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+html {
+	overflow: hidden;
+}
 
 body {
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
+	margin: 0;
 	scroll-snap-type: y mandatory;	
-	display: flex;
-	flex-direction: column;
-	overflow-y: scroll;
+	overflow: scroll;
+	height: 100vh;
+}
+
+section {
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: start;
 }
 
 /*body div {
@@ -156,3 +163,19 @@ p {
 	font-size: 1.2em;
 	font-style: italic;
 }
+
+
+/*.test {
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+.test div {
+	width: 100px;
+	min-height: 1000px;
+	background: red;
+	margin: 20px;
+	scroll-snap-align: start;
+}*/
