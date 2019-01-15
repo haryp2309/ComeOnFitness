@@ -10,6 +10,6 @@ var header = document.getElementById('header')
 header.removeAttribute('class', 'headertransition')	
 }
 
-window.addEventListener('scroll', function(){
-if (document.body.getBoundingClientRect().y == 0){rmheadertransition()}else{headertransition();}
+document.body.addEventListener('scroll', function(){
+if (document.getElementById('container-1').getBoundingClientRect().y == 0){rmheadertransition()}else{headertransition();}
 })
