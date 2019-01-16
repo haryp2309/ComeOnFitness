@@ -90,21 +90,28 @@ section {
 	position:absolute;
 	padding-right: 10px;
 	padding-left: 10px;
+	width: 20%;
+	transition: width 0.5s;
 }
 
 #sign-up div {
 	background-color: white;
 	border-radius: 10px;
-	height: 50%;
+	height: 75%;
 	display: flex;
 	margin: auto;
-	padding: 10px;
+	width: 100%;
 }
 
 #sign-up div p {
 	font-size: 1.6em;
 	margin: auto;
 	color: #ff5400;
+}
+
+#sign-up.sign-up-transition {
+	width:10%;
+	transition: width 1s;
 }
 
 .navboxes {
@@ -156,6 +163,22 @@ section {
 
 #container-4 {
 	background-image: url('media/Løpe.png');
+}
+
+#container-5 {
+	background-image: url('media/Svømmehall.png');
+}
+
+#container-6 {
+	background-image: url('media/Boksing.png');
+}
+
+#container-7 {
+	background-image: url('media/Yoga.png');
+}
+
+#container-8 {
+	background-image: url('media/Gruppetrening.png');
 }
 
 .infocontainers {
