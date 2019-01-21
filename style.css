@@ -35,25 +35,62 @@ section {
 }
 
 #header.headertransition {
-	height: 30px;
+	height: 35px;
 	transition: height 1s;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 }
 
 #headertitle {
-	width: 14%;
+	flex:1;
 	height: 100%;
-	display: flex;
 	color: white;
-	background-color:#ff5400;
 	margin: inherit;
 	justify-content: center;
-	padding: 2px;
+	background-color:#ff5400;
+	padding: 2px 10px;
+	transition: background-color 0.5s;
+}
+
+#headertitle.headertransition {
+	background-color: rgba(0,0,0,0.00);
+	transition: background-color 0.5s;
 }
 
 #headertitle img {
 	margin: auto;
 	max-height: 100%;
 	max-width: 100%;
+	display: block;
+}
+
+#headerbuttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex: 5;
+	color: white;
+}
+
+#headerbuttons div {
+	display: flex;
+	max-width: 25%;
+	padding:0 20px;	
+	margin: 0 10px;
+	transition: background-color 0.5s
+}
+
+#headerbuttons div:hover {
+	background-color: rgba(255,255,255,0.43);
+	transition: background-color 0.5s;
+	cursor: pointer;
+}
+
+#headerbuttons div p {
+	margin:auto;
+	font-style: unset;
+	font-size: 1.5vw;
 }
 
 #container-1 {
@@ -86,12 +123,10 @@ section {
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	right: 0;
-	position:absolute;
 	padding-right: 10px;
 	padding-left: 10px;
-	width: 20%;
-	transition: width 0.5s;
+	flex: 1;
+	transition: width 0.5s
 }
 
 #sign-up div {
@@ -104,7 +139,6 @@ section {
 }
 
 #sign-up div p {
-	font-size: 1.6em;
 	margin: auto;
 	color: #ff5400;
 }
