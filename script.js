@@ -31,3 +31,21 @@ flexFont = function () {
 window.onload = function(event) {
     flexFont();
 };
+
+var c = document.getElementById("scrollArrow");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(300, 20);
+ctx.lineTo(500, 150);
+ctx.lineTo(700, 20);
+//line 2
+ctx.moveTo(300, 120);
+ctx.lineTo(500, 250);
+ctx.lineTo(700, 120);
+ctx.strokeStyle = "white";
+ctx.lineWidth = 8;
+ctx.stroke();
+
+var actualInnerWidth = document.body.clientWidth;
+var header = document.getElementById('header');
+header.style.width=actualInnerWidth+'px';
