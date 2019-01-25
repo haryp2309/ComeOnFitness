@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@keyframes blink{
+0%{opacity: 0.2;padding-bottom: 0px;}
+50%{opacity: 1;padding-bottom: 10px;}
+100%{opacity: 0.2;padding-bottom: 0px;}
+}
 
 html {
 	overflow: hidden;
@@ -31,15 +36,16 @@ section {
 	margin: inherit;
 	z-index:100;
 	box-shadow: 0px 5px 12px 0px black;
-	transition: height 0.5s;
+	transition: height 0.5s, font-size 1s;
 }
 
 #header.headertransition {
 	height: 35px;
-	transition: height 1s;
+	transition: height 1s, font-size 1s;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	font-size: 0.8em;
 }
 
 #headertitle {
@@ -90,7 +96,7 @@ section {
 #headerbuttons div p {
 	margin:auto;
 	font-style: unset;
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 #container-1 {
@@ -136,12 +142,21 @@ section {
 	display: flex;
 	margin: auto;
 	width: 100%;
+	color: #ff5400;
+	transition: color 0.5s, background-color 0.5s;
+}
+
+#sign-up div:hover {
+	background-color: #ff5400;
+	color:white;
+	transition: color 0.5s, background-color 0.5s;
+	cursor: pointer;
 }
 
 #sign-up div p {
 	margin: auto;
-	color: #ff5400;
-	font-size: 1em;
+	font-size: 0.9em;
+	font-weight: bold;
 }
 
 #sign-up.sign-up-transition {
@@ -275,4 +290,5 @@ p {
 	left: 40%;
 	right: 40%;
 	opacity: 0.5;
+	animation: blink 2.5s ease-in-out infinite;
 }

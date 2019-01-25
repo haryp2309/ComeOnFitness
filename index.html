@@ -5,7 +5,7 @@
 <title>ComeOn Fitness</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body onResize="headerResize()">
 	<section id="container-1">
 		<canvas id="scrollArrow" width="1000" height="350">
 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -106,14 +106,14 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 		<div id="headertitle">
 			<img src="media/logo.png" alt="ComeOn Fitness">
 		</div>
-		<div id="headerbuttons">
+		<div id="headerbuttons" onResize="flexFont()">
 			<div class="flexFont"><p>Book gruppetime!</p></div>
 			<div class="flexFont"><p>Senter i nærheten</p></div>
 			<div class="flexFont"><p>Trening</p></div>
 			<div class="flexFont"><p>Om oss</p></div>
 		</div>
 		<div id="sign-up">
-			<div class="flexFont" id="sign-up-white">
+			<div class="flexFont" id="sign-up-white" onclick="showSignUp()">
 				<p>Bli medlem idag!</p>
 			</div>
 		</div>
