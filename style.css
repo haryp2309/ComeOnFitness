@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
 @keyframes blink{
 0%{opacity: 0.2;padding-bottom: 0px;}
 50%{opacity: 1;padding-bottom: 10px;}
@@ -17,12 +18,23 @@ body {
 	overflow-x: hidden;
 	height: 100vh;
 	scroll-behavior: smooth;
+	color:white;
+	font-family: 'Quicksand', sans-serif;
 }
 
 section {
 	height: 100vh;
 	width: 100vw;
 	scroll-snap-align: start;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+
+p {
+	font-size: 1.2em;
 }
 
 #header {
@@ -37,6 +49,7 @@ section {
 	z-index:100;
 	box-shadow: 0px 5px 12px 0px black;
 	transition: height 0.5s, font-size 1s;
+	font-size: 1.15em;
 }
 
 #header.headertransition {
@@ -45,7 +58,12 @@ section {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	font-size: 0.8em;
+	font-size: 0.95em;
+}
+
+#header div a {
+	color:white;
+	text-decoration: none;
 }
 
 #headertitle {
@@ -79,7 +97,7 @@ section {
 	color: white;
 }
 
-#headerbuttons div {
+.headerButton {
 	display: flex;
 	max-width: 25%;
 	padding:0 20px;	
@@ -87,16 +105,24 @@ section {
 	transition: background-color 0.5s
 }
 
-#headerbuttons div:hover {
+.headerButton:hover {
 	background-color: rgba(255,255,255,0.43);
 	transition: background-color 0.5s;
 	cursor: pointer;
 }
 
-#headerbuttons div p {
+.headerButton a div{
+	width: 100%;
+	height: 100%;
+	background: none;
+	display: flex;
+}
+
+.headerButton a div p {
 	margin:auto;
 	font-style: unset;
 	font-size: 1em;
+	white-space: nowrap;
 }
 
 #container-1 {
@@ -110,6 +136,31 @@ section {
 	left: 0px;
 	top: 0px;
 	scroll-snap-align: start;
+	display: flex;
+	background-blend-mode: color;
+	background-color: rgb(0,0,0,0.38)
+}
+
+#mainAd {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	display: flex;
+}
+
+#mainAd div {
+	transform: rotate(-10deg);
+	font-size: 3em;
+	position: absolute;
+	left: 10%;
+	top:20%;
+	font-family: 'Staatliches', cursive;
+	width: 80%;
+}
+
+#mainAd h1 {
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
 #container-2 {
@@ -249,16 +300,6 @@ section {
 	color: white;
 }
 
-.infobox h1 {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 3em;
-}
-
-p {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 1.2em;
-}
-
 .read-more {
 	background-color: rgba(255,255,255,1.00);
 	width: 100px;
@@ -291,4 +332,78 @@ p {
 	right: 40%;
 	opacity: 0.5;
 	animation: blink 2.5s ease-in-out infinite;
+}
+
+#container-9 {
+	background-color: rgba(255, 84, 0, 1);
+	position: relative;
+	scroll-snap-align: start;
+	display: flex;
+}
+
+#aboutUs {
+	flex-wrap: wrap;
+	flex-direction: row;
+	display: flex;
+	width: 80%;
+	height: 60%;
+	margin: auto;
+	color: white;
+	padding-top: 35px;
+}
+
+#aboutUsInfo {
+	height: 85%;
+	flex: 2;
+	max-width: 50%;
+}
+
+#aboutUsInfo p {
+	font-size: 1.3em;
+}
+
+#aboutUsContact {
+	height: 85%;
+	flex: 2;
+	max-width: 50%;
+	align-content: center;
+	display: flex;
+	font-size: 1.4em;
+	line-height: 45px;
+}
+
+#aboutUsContact div {
+	width: 60%;
+	height: 60%;
+	margin: auto;
+}
+
+#aboutUsSocialMedia {
+	height: 15%;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	min-width: 100%;
+}
+
+.aboutUsSocialMediaInnerDiv {
+	flex:2;
+	display: flex;
+	flex-wrap: nowrap;
+	height: 90%;
+	opacity: 0.6;
+	transition: opacity 0.5s;
+}
+
+.aboutUsSocialMediaInnerDiv:hover {
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.aboutUsSocialMediaInnerDiv div img {
+	height: 100%;
+}
+
+.aboutUsSocialMediaInnerDiv p {
+	margin: auto 10px;
 }

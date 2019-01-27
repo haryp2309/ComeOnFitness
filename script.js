@@ -29,14 +29,14 @@ document.body.addEventListener('scroll', function(){
 if (document.getElementById('container-1').getBoundingClientRect().y > -210){rmheadertransition();}else{headertransition();console.log('scrolled')}
 })
 
-function flexFont() {
-    var divs = document.getElementsByClassName("flexFont");
-    for(var i = 0; i < divs.length; i++) {
-        var relFontsize = divs[i].offsetHeight;
-        divs[i].style.fontSize = relFontsize+'px';
-		console.log('flexFont runned');
-    }
-};
+//function flexFont() {
+//    var divs = document.getElementsByClassName("flexFont");
+//    for(var i = 0; i < divs.length; i++) {
+//        var relFontsize = divs[i].offsetHeight;
+//        divs[i].style.fontSize = relFontsize+'px';
+//		console.log('flexFont runned');
+//    }
+//};
 
 window.onload = function(event) {
 //    flexFont();

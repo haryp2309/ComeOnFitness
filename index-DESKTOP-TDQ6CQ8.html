@@ -7,13 +7,6 @@
 </head>
 <body onResize="headerResize()">
 	<section id="container-1">
-		<div id="mainAd">
-			<div>
-				<h1><span style="color:orangered;">Fri</span>  innmelding</h1>
-				<h1 style="margin-left: 20%;">og  <span style="color:orangered;">Fri</span>  Februar</h1>
-				<p style="margin-left: 35%;">Nå er det ingen unskyldning for å ikke trene!</p>
-			</div>
-		</div>
 		<canvas id="scrollArrow" width="1000" height="350">
 Your browser does not support the HTML5 canvas tag.</canvas>
 	</section>
@@ -43,7 +36,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 			</div>
 		</div>
 		<div class="navboxes" onclick="document.body.scrollTo(0,document.getElementById('container-7').offsetTop)">
-			<img src="media/Yoga.png" style="opacity: 0.7;">
+			<img src="media/Yoga.png">
 			<div>
 				<h1>Yoga</h1>
 			</div>
@@ -109,80 +102,18 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 			</div>
 		</div>
 	</section>
-	<section id="container-9">
-		<div id="aboutUs">
-			<div id="aboutUsInfo">
-				<h1>Om oss</h1>
-				<p>ComeOn Fitness er Norges største lavpris treningssenterkjede. Vi tilbyr styrke, løping, svømming, boksing, yoga og gruppetrening og personlig trener til den laveste prisen i markedet.</p>
-				<p>Da ComeOn Fitness etablerte seg i 2010 var det mange som ikke trodde det var mulig at en treningssenterkjede kunne kombinere høy kvalitet med lav pris. 24 sentre og 70.000 medlemmer senere mener vi at vi har bevist at det er mulig - fra kun 249 kr i måneden.</p>
-				<p>ComeOn Fitness ønsker å være et rimelig og folkelig alternativ til andre treningssenterkjeder.</p>
-			</div>
-			<div id="aboutUsContact">
-				<div>
-					<h2>Kundeservice:</h2>
-					<p>Telefon: <a href="tel:+4712121" style="color:rgb(255, 216, 124);">12121</a> <span style="opacity: 0.5;">(man-fre kl 5-16)</span><br>
-					E-post: kundeservice@common.com<br>
-					</p>
-				</div>
-			</div>
-			<div id="aboutUsSocialMedia">
-				<div class="aboutUsSocialMediaInnerDiv">
-						<div>
-							<img src="media/social-media/facebook.png">
-						</div>
-						<p>facebook</p>
-				</div>
-				<div class="aboutUsSocialMediaInnerDiv">
-						<div>
-							<img src="media/social-media/twitter.png">
-						</div>
-						<p>twitter</p>
-				</div>
-				<div class="aboutUsSocialMediaInnerDiv">
-						<div>
-							<img src="media/social-media/instagram.png">
-						</div>
-						<p>instagram</p>
-				</div>
-			</div>
-		</div>
-	</section>
 	<div id="header">
 		<div id="headertitle">
 			<img src="media/logo.png" alt="ComeOn Fitness">
 		</div>
 		<div id="headerbuttons" onResize="flexFont()">
-			<div class="headerButton">
-				<a>
-					<div>
-						<p>Book gruppetime!</p>
-					</div>
-				</a>
-			</div>
-			<div class="headerButton">
-				<a>
-					<div>
-						<p>Senter i nærheten</p>
-					</div>
-				</a>
-			</div>
-			<div class="headerButton">
-				<a>
-					<div>
-						<p>Trening</p>
-					</div>
-				</a>
-			</div>
-			<div class="headerButton">
-				<a href="#container-9">
-					<div>
-						<p>Om oss</p>
-					</div>
-				</a>
-			</div>
+			<div class="flexFont"><p>Book gruppetime!</p></div>
+			<div class="flexFont"><p>Senter i nærheten</p></div>
+			<div class="flexFont"><p>Trening</p></div>
+			<div class="flexFont"><p>Om oss</p></div>
 		</div>
 		<div id="sign-up">
-			<div id="sign-up-white" onclick="showSignUp()">
+			<div class="flexFont" id="sign-up-white" onclick="showSignUp()">
 				<p>Bli medlem idag!</p>
 			</div>
 		</div>
