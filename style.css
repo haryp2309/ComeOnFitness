@@ -449,9 +449,9 @@ p {
 	left:10%;
 	top:0;
 	background-position: center;
-	overflow: hidden;
 	background-color: rgba(0,0,0,0.5);
 	background-blend-mode: color;
+	background-repeat: no-repeat;
 	box-shadow: 0 0 20px 5px black;
 	transition: opacity 0.5s;
 	z-index: -1;
@@ -486,4 +486,44 @@ p {
 
 #gruppetreningInnerBG::before {
 	background-image: url("media/Gruppetrening-blured.png");
+}
+
+#styrkeBG {
+	background-image: url('media/Styrke.png')
+}
+
+#styrkeInnerBG::before {
+	background-image: url('media/Styrke-blured.png')
+}
+
+#yogaBG {
+	background-image: url('media/Yoga.png')
+}
+
+#yogaInnerBG::before {
+	background-image: url('media/Yoga-blured.png')
+}
+
+#boksingBG {
+	background-image: url('media/Boksing.png')
+}
+
+#boksingInnerBG::before {
+	background-image: url('media/Boksing-blured.png')
+}
+
+#lopingBG {
+	background-image: url('media/Løpe.png')
+}
+
+#lopingInnerBG::before {
+	background-image: url('media/Løpe-blured.png')
+}
+
+#svommehallBG {
+	background-image: url('media/Svømmehall.png')
+}
+
+#svommehallInnerBG::before {
+	background-image: url('media/Svømmehall-blured.png')
 }
