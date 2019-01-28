@@ -9,13 +9,53 @@
 	<section class="infopagesContainer" id="svommehallBG">
 		<div class="infopagesInnerContainer" id="svommehallInnerBG">
 			<h1>Svømmehall</h1>
-			<span>er gøy og motiverende! Hos oss får du gruppetimer som gir deg fremgang, uansett form og alder.</span>
-			<h2>Bli mer motivert!</h2>
-			<p><img src="media/Gruppetrening-2.jpg" alt="grupptrening">Vellykket trening handler om å lage seg gode vaner. Vi vet at det er lettere for deg å fortsette å trene hvis du blir med på gruppetimene våre. Samtidig øker du sjansene for å trene fast hver uke.</p>
-			<h2>Våre timer</h2>
-			<p>Vi tilbyr verdens beste og mest populære gruppetimer fra Les Mills. Vi har timer for alle, enten du liker kondisjon, styrke eller mykere yoga og pilates-timer. Vi har BODYATTACK, BODYPUMP, BODYBALANCE og BODYSTEP, og verdens mest populære dansetime Zumba. Vi har selvsagt også sykkeltimer (RPM) i tillegg til virtuelle sykkeltimer på skjerm. Ta gjerne med deg egne øreplugger til sykkeltimene slik at du skal kunne få lyd under timen.</p>
+			<span>Mange steder finner du ComeOn Fitness i tilknytning til en svømmehall. Da er inngang til svømmehallen alltid inkludert i medlemskapet. Det betyr at du har mulighet til å trene og svømme med samme kort. Svømming er en enkel og effektiv treningsform som også er skånsom for kroppen.</span>
+			<h2>Fordeler</h2>
+			<p><img src="media/Svømmehall-2.jpg" alt="svømmehall">Belastningen på kroppen reduseres i vannet, og svømming passer derfor fint som rehabiliteringstrening, både etter skade og som aktiv restitusjon etter en tøff treningsperiode. Svømmetrening er en skånsom form for kondisjonstrening som også styrker muskulaturen i armer, rygg og skuldre. På noen av treningssentrene våre tilbyr vi også ulike typer gruppetrening i vann.</p>
+			<h2>Husk!</h2>
+			<p>Husk å fylle på med væske etter svømmetreningen. Selv om du ikke merker at du svetter når du er omgitt av vann, kvitter kroppen seg med væske, og lagrene må fylles opp.</p>
 		</div>
 	</section>
+	<div id="signUpPopUpBG" onclick="rmsignUpPopUp()"></div>
+	<div id="signUpPopUp">
+		<div>
+		<form action="/action_page.php">
+			<div>
+				<h1>Bli medlem her!</h1>
+			</div>
+			<div>
+				<label for="fname">Fornavn</label>
+				<input type="text" id="fname" name="firstname" placeholder="Ditt fornavn..">
+			</div>
+
+			<div>
+				<label for="lname">Etternavn</label>
+				<input type="text" id="lname" name="lastname" placeholder="Ditt etternavn..">
+			</div>
+
+			<div>
+				<label>E-post</label>
+				<input type="text" id="mail" name="lastname" placeholder="E-post..">
+			</div>
+			
+			<div>
+				<label>Nærmeste Senter</label>
+				<select id="senter" name="senter">
+					<option value="osloS">Oslo S</option>
+					<option value="stovner">Stovner</option>
+					<option value="boler">Bøler</option>
+				</select>
+			</div>
+  
+			<div>
+				<input type="submit" value="submut">
+			</div>
+		</form>
+		</div>
+		<div>
+			<img src="media/logo.png">
+		</div>
+	</div>
 	<div id="header">
 		<div id="headertitle">
 			<img src="media/logo.png" alt="ComeOn Fitness">
@@ -51,7 +91,7 @@
 			</div>
 		</div>
 		<div id="sign-up">
-			<div id="sign-up-white" onclick="showSignUp()">
+			<div id="sign-up-white" onclick="signUpPopUp()">
 				<p>Bli medlem idag!</p>
 			</div>
 		</div>

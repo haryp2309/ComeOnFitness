@@ -364,6 +364,7 @@ p {
 	height: 85%;
 	flex: 2;
 	max-width: 50%;
+	overflow: auto;
 }
 
 #aboutUsInfo p {
@@ -376,7 +377,7 @@ p {
 	max-width: 50%;
 	align-content: center;
 	display: flex;
-	font-size: 1.4em;
+	font-size: 1.1em;
 	line-height: 45px;
 }
 
@@ -384,6 +385,10 @@ p {
 	width: 60%;
 	height: 60%;
 	margin: auto;
+}
+
+#aboutUsContact h2 {
+	margin-block-end: -10px;
 }
 
 #aboutUsSocialMedia {
@@ -526,4 +531,115 @@ p {
 
 #svommehallInnerBG::before {
 	background-image: url('media/Svømmehall-blured.png')
+}
+
+
+#signUpPopUp {
+	width: 60vw;
+	height: 50vh;
+	background-color: rgba(255,255,255,0.9);
+	position: fixed;
+	z-index: 1000;
+	margin: 25vh 20vw;
+	border-radius: 10px;
+	opacity: 1;
+	transition: display 0.5s;
+	display: none;
+	flex-direction: row;
+	opacity: 0;
+	transition: opacity 0.5s;
+	left:0;
+	top:0;
+}
+
+form {
+	color: #ff5400;
+	margin: auto;
+	width: 70%;
+	font-size: 1.3em;
+}
+
+form div {
+	margin: 5%;
+}
+
+
+form div label {
+	margin-right: 10px;
+}
+
+#signUpPopUp div {
+	flex:1;
+	display: flex;
+}
+
+#signUpPopUp img {
+	margin: auto;
+	width: 70%;
+}
+
+#signUpPopUp h1 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	font-size: 2em;
+}
+
+#signUpPopUpBG {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.6);
+	display: none;
+	opacity:0;
+	transition: opacity 0.5s;
+}
+
+#contactPopUp div {
+	flex:1;
+	display: flex;
+}
+
+#contactPopUp img {
+	margin: auto;
+	width: 70%;
+}
+
+#contactPopUp h1 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	font-size: 2em;
+}
+
+#contactPopUpBG {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.6);
+	display: none;
+	opacity:0;
+	transition: opacity 0.5s;
+}
+
+#contactPopUp {
+	width: 60vw;
+	height: 50vh;
+	background-color: rgba(255,255,255,0.9);
+	position: fixed;
+	z-index: 1000;
+	margin: 25vh 20vw;
+	border-radius: 10px;
+	opacity: 1;
+	transition: display 0.5s;
+	display: none;
+	flex-direction: row;
+	opacity: 0;
+	transition: opacity 0.5s;
+	left:0;
+	top:0;
 }

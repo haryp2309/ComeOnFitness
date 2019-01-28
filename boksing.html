@@ -9,13 +9,53 @@
 	<section class="infopagesContainer" id="boksingBG">
 		<div class="infopagesInnerContainer" id="boksingInnerBG">
 			<h1>Boksing</h1>
-			<span>er gøy og motiverende! Hos oss får du gruppetimer som gir deg fremgang, uansett form og alder.</span>
+			<span>Gruppetreningstimen boksing by ComeOn Fitness er en skikkelig energikick! Med slag og spark på hansker blander vi styrke- og kondisjonsøvelser. Her har du virkelig mulighet til å gi 100%!</span>
 			<h2>Bli mer motivert!</h2>
-			<p><img src="media/Gruppetrening-2.jpg" alt="grupptrening">Vellykket trening handler om å lage seg gode vaner. Vi vet at det er lettere for deg å fortsette å trene hvis du blir med på gruppetimene våre. Samtidig øker du sjansene for å trene fast hver uke.</p>
-			<h2>Våre timer</h2>
+			<p><img src="media/Boksing-2.jpg" alt="boksing">Denne treningsformen er inspirert av boxing og kampsport, og du får lære deg rett teknikk for slag og spark. Du kommer til å få bedre kondisjon, bli sterkere og føle deg mer selvsikker. En perfekt time der du kan utfordre din kompis!</p>
+			<h2>Våre andre gruppetimer</h2>
 			<p>Vi tilbyr verdens beste og mest populære gruppetimer fra Les Mills. Vi har timer for alle, enten du liker kondisjon, styrke eller mykere yoga og pilates-timer. Vi har BODYATTACK, BODYPUMP, BODYBALANCE og BODYSTEP, og verdens mest populære dansetime Zumba. Vi har selvsagt også sykkeltimer (RPM) i tillegg til virtuelle sykkeltimer på skjerm. Ta gjerne med deg egne øreplugger til sykkeltimene slik at du skal kunne få lyd under timen.</p>
 		</div>
 	</section>
+	<div id="signUpPopUpBG" onclick="rmsignUpPopUp()"></div>
+	<div id="signUpPopUp">
+		<div>
+		<form action="/action_page.php">
+			<div>
+				<h1>Bli medlem her!</h1>
+			</div>
+			<div>
+				<label for="fname">Fornavn</label>
+				<input type="text" id="fname" name="firstname" placeholder="Ditt fornavn..">
+			</div>
+
+			<div>
+				<label for="lname">Etternavn</label>
+				<input type="text" id="lname" name="lastname" placeholder="Ditt etternavn..">
+			</div>
+
+			<div>
+				<label>E-post</label>
+				<input type="text" id="mail" name="lastname" placeholder="E-post..">
+			</div>
+			
+			<div>
+				<label>Nærmeste Senter</label>
+				<select id="senter" name="senter">
+					<option value="osloS">Oslo S</option>
+					<option value="stovner">Stovner</option>
+					<option value="boler">Bøler</option>
+				</select>
+			</div>
+  
+			<div>
+				<input type="submit" value="submut">
+			</div>
+		</form>
+		</div>
+		<div>
+			<img src="media/logo.png">
+		</div>
+	</div>
 	<div id="header">
 		<div id="headertitle">
 			<img src="media/logo.png" alt="ComeOn Fitness">
@@ -51,7 +91,7 @@
 			</div>
 		</div>
 		<div id="sign-up">
-			<div id="sign-up-white" onclick="showSignUp()">
+			<div id="sign-up-white" onclick="signUpPopUp()">
 				<p>Bli medlem idag!</p>
 			</div>
 		</div>

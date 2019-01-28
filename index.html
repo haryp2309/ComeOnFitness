@@ -6,6 +6,56 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body onResize="headerResize();flexFont()">
+	<div id="contactPopUpBG" onclick="rmcontactPopUp()"></div>
+	<div id="contactPopUp">
+		<div>
+		<form action="/action_page.php">
+			<div>
+				<h1>Kontakt Oss</h1>
+			</div>
+			<div>
+				<label for="fname">Fornavn</label>
+				<input type="text" id="fname" name="firstname" placeholder="Ditt fornavn..">
+			</div>
+
+			<div>
+				<label for="lname">Etternavn</label>
+				<input type="text" id="lname" name="lastname" placeholder="Ditt etternavn..">
+			</div>
+
+			<div>
+				<label>Mobil</label>
+				<input type="number" id="tel" name="mobile" placeholder="Mobilnummer..">
+			</div>
+			
+			<div>
+				<label>E-post</label>
+				<input type="text" id="mail" name="lastname" placeholder="E-post..">
+			</div>
+			
+			<div>
+				<label>Gjelder</label>
+				<select id="senter" name="senter">
+					<option value="newCus">Ny Kunde</option>
+					<option value="quest">Spørsmål om tilbud</option>
+					<option value="exiCus">Administrering av abonnement</option>
+				</select>
+			</div>
+			
+			<div>
+				<label>Melding</label>
+				<input type="text" id="message" name="message" placeholder="Skriv din beskjed her...">
+			</div>
+  
+			<div>
+				<input type="submit" value="submut">
+			</div>
+		</form>
+		</div>
+		<div>
+			<img src="media/logo.png">
+		</div>
+	</div>
 	<section id="container-1">
 		<div id="mainAd" class="flexFont">
 			<div>
@@ -58,7 +108,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 	<section id="container-3" class="infocontainers">
 		<div class="infobox">
 			<h1>Styrke</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Vil du trene styrketrening finnes alt du trenger hos oss. Vi har lagt vekt på høy brukervennlighet og enkle, men funksjonelle apparater. Du vil ikke finne apparater hos oss som du ikke enkelt forstår hvordan fungerer. Da sparer du tid, og vi tid. Det er smart.</p>
 			<div class="read-more">
 				<a href="styrke.html">
 					<p>Les mer</p>
@@ -69,7 +119,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 	<section id="container-4" class="infocontainers">
 		<div class="infobox">
 			<h1>Løping</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Våre treningssentre har mange kondisjonsapparater du kan velge mellom - blant annet tredemøller, stepmaskiner, sykler og elipsemaskiner. Disse er levert av Life Fitness, som er en av verdens største produsenter av treningsutstyr.</p>
 			<div class="read-more">
 				<a href="loping.html">
 					<p>Les mer</p>
@@ -80,7 +130,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 	<section id="container-5" class="infocontainers">
 		<div class="infobox">
 			<h1>Svømming</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Mange steder finner du ComeOn Fitness i tilknytning til en svømmehall. Da er inngang til svømmehallen alltid inkludert i medlemskapet. Det betyr at du har mulighet til å trene og svømme med samme kort. Svømming er en enkel og effektiv treningsform som også er skånsom for kroppen.</p>
 			<div class="read-more">
 				<a href="svommehall.html">
 					<p>Les mer</p>
@@ -91,7 +141,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 	<section id="container-6" class="infocontainers">
 		<div class="infobox">
 			<h1>Boksing</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Gruppetreningstimen boksing by ComeOn Fitness er en skikkelig energikick! Med slag og spark på hansker blander vi styrke- og kondisjonsøvelser. Her har du virkelig mulighet til å gi 100%!</p>
 			<div class="read-more">
 				<a href="boksing.html">
 					<p>Les mer</p>
@@ -102,7 +152,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 	<section id="container-7" class="infocontainers">
 		<div class="infobox">
 			<h1>Yoga</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Godt for kropp og sjel. En time som passer for alle. På yogatimen blander vi gammel tradisjon med moderne, vestlige treningsprinsipper. Gruppetimen Yoga er svært god trening for både kropp og sinn. Treningen du gjør her har en positiv effekt på din bevegelighet, styrke, pust, konsentrasjon og kroppsbevissthet.</p>
 			<div class="read-more">
 				<a href="yoga.html">
 					<p>Les mer</p>
@@ -113,7 +163,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 	<section id="container-8" class="infocontainers">
 		<div class="infobox">
 			<h1>Gruppetrening</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Vellykket trening handler om å lage seg gode vaner. Vi vet at det er lettere for deg å fortsette å trene hvis du blir med på gruppetimene våre. Samtidig øker du sjansene for å trene fast hver uke.</p>
 			<div class="read-more">
 				<a href="gruppetrening.html">
 					<p>Les mer</p>
@@ -134,6 +184,13 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 					<h2>Kundeservice:</h2>
 					<p>Telefon: <a href="tel:+4712121" style="color:rgb(255, 216, 124);">12121</a> <span style="opacity: 0.5;">(man-fre kl 5-16)</span><br>
 					E-post: kundeservice@common.com<br>
+						<span onclick="contactPopUp()" style="cursor:pointer;text-decoration: underline;">Trykk her for kontaktskjema</span>
+					</p>
+					<h2>Åpningstider:</h2>
+					<p style="font-size: 0.9em; line-height: 1.5em;">
+						Mandag - fredag: kl. 06.30 - 22.30 <br>
+						Lørdag: kl. 09.00 - 19.00 <br>
+						Søndag: kl. 10.00 - 20.00 <br>
 					</p>
 				</div>
 			</div>
@@ -159,6 +216,46 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 			</div>
 		</div>
 	</section>
+	<div id="signUpPopUpBG" onclick="rmsignUpPopUp()"></div>
+	<div id="signUpPopUp">
+		<div>
+		<form action="/action_page.php">
+			<div>
+				<h1>Bli medlem her!</h1>
+			</div>
+			<div>
+				<label for="fname">Fornavn</label>
+				<input type="text" id="fname" name="firstname" placeholder="Ditt fornavn..">
+			</div>
+
+			<div>
+				<label for="lname">Etternavn</label>
+				<input type="text" id="lname" name="lastname" placeholder="Ditt etternavn..">
+			</div>
+
+			<div>
+				<label>E-post</label>
+				<input type="text" id="mail" name="lastname" placeholder="E-post..">
+			</div>
+			
+			<div>
+				<label>Nærmeste Senter</label>
+				<select id="senter" name="senter">
+					<option value="osloS">Oslo S</option>
+					<option value="stovner">Stovner</option>
+					<option value="boler">Bøler</option>
+				</select>
+			</div>
+  
+			<div>
+				<input type="submit" value="submut">
+			</div>
+		</form>
+		</div>
+		<div>
+			<img src="media/logo.png">
+		</div>
+	</div>
 	<div id="header">
 		<div id="headertitle">
 			<img src="media/logo.png" alt="ComeOn Fitness">
@@ -194,7 +291,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 			</div>
 		</div>
 		<div id="sign-up">
-			<div id="sign-up-white" onclick="showSignUp()">
+			<div id="sign-up-white" onclick="signUpPopUp()">
 				<p>Bli medlem idag!</p>
 			</div>
 		</div>

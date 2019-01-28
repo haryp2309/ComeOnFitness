@@ -9,13 +9,53 @@
 	<section class="infopagesContainer" id="styrkeBG">
 		<div class="infopagesInnerContainer" id="styrkeInnerBG">
 			<h1>Styrke</h1>
-			<span>er gøy og motiverende! Hos oss får du gruppetimer som gir deg fremgang, uansett form og alder.</span>
-			<h2>Bli mer motivert!</h2>
-			<p><img src="media/Gruppetrening-2.jpg" alt="grupptrening">Vellykket trening handler om å lage seg gode vaner. Vi vet at det er lettere for deg å fortsette å trene hvis du blir med på gruppetimene våre. Samtidig øker du sjansene for å trene fast hver uke.</p>
-			<h2>Våre timer</h2>
-			<p>Vi tilbyr verdens beste og mest populære gruppetimer fra Les Mills. Vi har timer for alle, enten du liker kondisjon, styrke eller mykere yoga og pilates-timer. Vi har BODYATTACK, BODYPUMP, BODYBALANCE og BODYSTEP, og verdens mest populære dansetime Zumba. Vi har selvsagt også sykkeltimer (RPM) i tillegg til virtuelle sykkeltimer på skjerm. Ta gjerne med deg egne øreplugger til sykkeltimene slik at du skal kunne få lyd under timen.</p>
+			<span>Vi tilbyr et bredt og variert utvalg av treningsutstyr. Det betyr at du vil finne utstyr som kan hjelpe deg med å nå ditt treningsmål.</span>
+			<h2>Styrketrening med maskiner</h2>
+			<p><img src="media/Styrke-2.jpg" alt="styrke">Vil du trene styrketrening finnes alt du trenger hos oss. Vi har lagt vekt på høy brukervennlighet og enkle, men funksjonelle apparater. Du vil ikke finne apparater hos oss som du ikke enkelt forstår hvordan fungerer. Da sparer du tid, og vi tid. Det er smart.</p>
+			<h2>Trening med frivekter</h2>
+			<p>På alle treningssentrene våre er det også en stor avdeling med frie vekter. Frie vekter er et must for de fleste som driver med styrketrening. Vi har alt nødvendig utstyr inkludert benkpress, knebøy, vektstenger og hantler på inntil 40 kg tilgjengelig. For å lære riktig teknikk og god utførelse av øvelser kan du avtale time med en av våre personlige trenere. Finn ditt nærmeste senter for å se hvilke PT'er som er der, og ta kontakt med en gang for å book en time.</p>
 		</div>
 	</section>
+	<div id="signUpPopUpBG" onclick="rmsignUpPopUp()"></div>
+	<div id="signUpPopUp">
+		<div>
+		<form action="/action_page.php">
+			<div>
+				<h1>Bli medlem her!</h1>
+			</div>
+			<div>
+				<label for="fname">Fornavn</label>
+				<input type="text" id="fname" name="firstname" placeholder="Ditt fornavn..">
+			</div>
+
+			<div>
+				<label for="lname">Etternavn</label>
+				<input type="text" id="lname" name="lastname" placeholder="Ditt etternavn..">
+			</div>
+
+			<div>
+				<label>E-post</label>
+				<input type="text" id="mail" name="lastname" placeholder="E-post..">
+			</div>
+			
+			<div>
+				<label>Nærmeste Senter</label>
+				<select id="senter" name="senter">
+					<option value="osloS">Oslo S</option>
+					<option value="stovner">Stovner</option>
+					<option value="boler">Bøler</option>
+				</select>
+			</div>
+  
+			<div>
+				<input type="submit" value="submut">
+			</div>
+		</form>
+		</div>
+		<div>
+			<img src="media/logo.png">
+		</div>
+	</div>
 	<div id="header">
 		<div id="headertitle">
 			<img src="media/logo.png" alt="ComeOn Fitness">
@@ -51,7 +91,7 @@
 			</div>
 		</div>
 		<div id="sign-up">
-			<div id="sign-up-white" onclick="showSignUp()">
+			<div id="sign-up-white" onclick="signUpPopUp()">
 				<p>Bli medlem idag!</p>
 			</div>
 		</div>

@@ -30,6 +30,42 @@ function infopagesTransition() {
 	console.log('infopagesTransition runned')
 }
 
+function signUpPopUp() {
+	setTimeout(function() {
+		document.getElementById('signUpPopUpBG').style.opacity = '1';
+		document.getElementById('signUpPopUp').style.opacity = '1';
+		},200)
+	document.getElementById('signUpPopUp').style.display = 'flex';
+	document.getElementById('signUpPopUpBG').style.display = 'flex';
+}
+
+function rmsignUpPopUp() {
+	setTimeout(function() {
+		document.getElementById('signUpPopUp').style.display = 'none';
+		document.getElementById('signUpPopUpBG').style.display = 'none';
+		},200)
+	document.getElementById('signUpPopUpBG').style.opacity = '0';
+	document.getElementById('signUpPopUp').style.opacity = '0';
+}
+
+function contactPopUp() {
+	setTimeout(function() {
+		document.getElementById('contactPopUpBG').style.opacity = '1';
+		document.getElementById('contactPopUp').style.opacity = '1';
+		},200)
+	document.getElementById('contactPopUp').style.display = 'flex';
+	document.getElementById('contactPopUpBG').style.display = 'flex';
+}
+
+function rmcontactPopUp() {
+	setTimeout(function() {
+		document.getElementById('contactPopUp').style.display = 'none';
+		document.getElementById('contactPopUpBG').style.display = 'none';
+		},200)
+	document.getElementById('contactPopUpBG').style.opacity = '0';
+	document.getElementById('contactPopUp').style.opacity = '0';
+}
+
 document.body.addEventListener('scroll', function(){
 if (document.getElementById('container-1').getBoundingClientRect().y > -210){rmheadertransition();}else{headertransition();console.log('scrolled')}
 })
