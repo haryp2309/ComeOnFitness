@@ -25,6 +25,10 @@ function headerResize() {
 	//console.log('headerResize runned');
 }
 
+function infopagesTransition() {
+	document.getElementsByClassName('infopagesInnerContainer')[0].style.opacity=1;
+	console.log('infopagesTransition runned')
+}
 
 document.body.addEventListener('scroll', function(){
 if (document.getElementById('container-1').getBoundingClientRect().y > -210){rmheadertransition();}else{headertransition();console.log('scrolled')}
@@ -41,6 +45,7 @@ function flexFont() {
 window.onload = function(event) {
     flexFont();
 	headerResize();
+	infopagesTransition();
 };
 
 

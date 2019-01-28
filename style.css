@@ -428,6 +428,9 @@ p {
 	margin: auto;
 	padding: 10px;
 	overflow: hidden;
+	opacity: 0;
+	transition: opacity 0.5s;
+	transition-timing-function: ease-in-out;
 }
 
 .infopagesInnerContainer::before {
@@ -446,6 +449,7 @@ p {
 	background-color: rgba(255,255,255,0.05);
 	background-blend-mode: color;
 	box-shadow: 0 0 20px 5px black;
+	transition: opacity 0.5s;
 }
 
 #gruppetreningBG {
