@@ -26,18 +26,6 @@ function headerResize() {
 }
 
 
-//imported https://stackoverflow.com/questions/19505142/get-posx-and-posy-of-background-position-in-javascript
-function backgroundPosition() {
-var demo = document.getElementById('gruppetreningContainer'),
-    _tmp = window.getComputedStyle(demo,null).backgroundPosition.trim().split(/\s+/),
-    positions = {
-        'left' : _tmp[0],
-        'top' : _tmp[1]
-    };
-console.log(positions, positions.left, positions.top);
-}
-//imported https://stackoverflow.com/questions/19505142/get-posx-and-posy-of-background-position-in-javascript
-
 document.body.addEventListener('scroll', function(){
 if (document.getElementById('container-1').getBoundingClientRect().y > -210){rmheadertransition();}else{headertransition();console.log('scrolled')}
 })

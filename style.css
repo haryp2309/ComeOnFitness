@@ -324,6 +324,12 @@ p {
 	font-style: normal;
 }
 
+.read-more a {
+	text-decoration: none;
+	color:unset;
+	width: 100%;
+	height: 100%;
+}
 
 #scrollArrow {
 	border:none;
@@ -410,38 +416,42 @@ p {
 	margin: auto 10px;
 }
 
-#gruppetreningContainer {
-	background-image: url("media/Gruppetrening.png");
+.infopagesContainer {
 	background-size: cover;
-	background-color: rgba(255,255,255,0.60);
-	background-blend-mode: color;
 	background-position: center;
+	overflow: hidden;
 }
 
-
-#gruppetreningContainer .bg {
-	width: 100%;
-	height: 100%;
-	background-image: url("media/Gruppetrening.png");
-	background-size: cover;
-	background-color: rgba(255,255,255,0.10);
-	background-blend-mode: color;
-	background-position: center;
-	filter: blur(5px);
-	transform: scale(1.1);
-	z-index: -1;
-}
-
-#gruppetreningInnerContainer {
+.infopagesInnerContainer {
 	width: 80%;
 	height: 100%;
 	margin: auto;
-	background-color: rgba(0,0,0,0.6);
-	padding: 10px;	
-	position: absolute;
+	padding: 10px;
+	overflow: hidden;
 }
 
-#gruppetreningInnerContainer div {
-	width: 100%;
+.infopagesInnerContainer::before {
+	display: block;
+	position: fixed;
+	content: ' ';
+	background-size: cover;
+	opacity: 1;
+	overflow: hidden;
+	width: 80%;
 	height: 100%;
+	left:10%;
+	top:0;
+	background-position: center;
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.05);
+	background-blend-mode: color;
+	box-shadow: 0 0 20px 5px black;
+}
+
+#gruppetreningBG {
+	background-image: url("media/Gruppetrening.png");
+}
+
+#gruppetreningInnerBG::before {
+	background-image: url("media/Gruppetrening-blured.png");
 }
