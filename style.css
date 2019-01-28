@@ -450,7 +450,7 @@ p {
 	top:0;
 	background-position: center;
 	overflow: hidden;
-	background-color: rgba(0,0,0,0.05);
+	background-color: rgba(0,0,0,0.5);
 	background-blend-mode: color;
 	box-shadow: 0 0 20px 5px black;
 	transition: opacity 0.5s;
