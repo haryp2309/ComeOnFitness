@@ -25,21 +25,33 @@ function headerResize() {
 	//console.log('headerResize runned');
 }
 
+
+//imported https://stackoverflow.com/questions/19505142/get-posx-and-posy-of-background-position-in-javascript
+function backgroundPosition() {
+var demo = document.getElementById('gruppetreningContainer'),
+    _tmp = window.getComputedStyle(demo,null).backgroundPosition.trim().split(/\s+/),
+    positions = {
+        'left' : _tmp[0],
+        'top' : _tmp[1]
+    };
+console.log(positions, positions.left, positions.top);
+}
+//imported https://stackoverflow.com/questions/19505142/get-posx-and-posy-of-background-position-in-javascript
+
 document.body.addEventListener('scroll', function(){
 if (document.getElementById('container-1').getBoundingClientRect().y > -210){rmheadertransition();}else{headertransition();console.log('scrolled')}
 })
 
-//function flexFont() {
-//    var divs = document.getElementsByClassName("flexFont");
-//    for(var i = 0; i < divs.length; i++) {
-//        var relFontsize = divs[i].offsetHeight;
-//        divs[i].style.fontSize = relFontsize+'px';
-//		console.log('flexFont runned');
-//    }
-//};
+function flexFont() {
+    var divs = document.getElementsByClassName("flexFont");
+    for(var i = 0; i < divs.length; i++) {
+        var relFontsize = divs[i].offsetHeight;
+        divs[i].style.fontSize = relFontsize*0.004+'em';
+		console.log('flexFont runned');
+    }}
 
 window.onload = function(event) {
-//    flexFont();
+    flexFont();
 	headerResize();
 };
 
