@@ -425,7 +425,7 @@ p {
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
-	z-index: -2;
+	z-index: 0;
 	position: absolute;
 	font-size: 1.5em;
 }
@@ -642,4 +642,13 @@ form div label {
 	transition: opacity 0.5s;
 	left:0;
 	top:0;
+}
+
+
+#senterBG {
+	background-image: url('media/wallpaper-1-index.png')
+}
+
+#senterInnerBG::before {
+	background-image: url('media/wallpaper-1-index-blured.png')
 }
