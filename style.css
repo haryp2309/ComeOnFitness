@@ -373,17 +373,18 @@ p {
 }
 
 #aboutUsInfo p {
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 #aboutUsContact {
 	height: 85%;
 	flex: 2;
-	max-width: 50%;
+	min-width: 50%;
 	align-content: center;
 	display: flex;
 	font-size: 1em;
-	line-height: 45px;
+	line-height: 30px;
+	overflow: auto;
 }
 
 #aboutUsContact div {
