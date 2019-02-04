@@ -354,7 +354,7 @@ p {
 	flex-direction: row;
 	display: flex;
 	width: 80%;
-	height: 60%;
+	height: 75%;
 	margin: auto;
 	color: white;
 	padding-top: 35px;
@@ -365,6 +365,11 @@ p {
 	flex: 2;
 	max-width: 50%;
 	overflow: auto;
+	display: flex;
+}
+
+#aboutUsInfo div {
+	margin:auto;
 }
 
 #aboutUsInfo p {
@@ -377,7 +382,7 @@ p {
 	max-width: 50%;
 	align-content: center;
 	display: flex;
-	font-size: 1.1em;
+	font-size: 1em;
 	line-height: 45px;
 }
 
